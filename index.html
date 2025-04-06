@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+    <link rel="stylesheet" href="./CSS/hero.css" />
+    <link rel="stylesheet" href="./CSS/companies.css" />
+    <link rel="stylesheet" href="./CSS/bento.css" />
+    <link rel="stylesheet" href="./CSS/features.css" />
+    <link rel="stylesheet" href="./CSS/clients.css" />
+    <link rel="stylesheet" href="./CSS/pricing.css" />
+    <link rel="stylesheet" href="./CSS/cta.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <load src="./HTML-PARTS/navbar.html"></load>
+
+    <main>
+      <load src="./HTML-PARTS/hero.html"></load>
+      <load src="./HTML-PARTS/companies.html"></load>
+      <load src="./HTML-PARTS/bento.html"></load>
+      <load src="./HTML-PARTS/features.html"></load>
+      <load src="./HTML-PARTS/clients.html"></load>
+      <load src="./HTML-PARTS/pricing.html"></load>
+      <load src="./HTML-PARTS/cta.html"></load>
+    </main>
+
+    <load src="./HTML-PARTS/footer.html"></load>
+
+    <script>
+      
+      document.querySelectorAll('load').forEach(async (element) => {
+          const src = element.getAttribute('src');
+          try {
+              const response = await fetch(src);
+              if (!response.ok) throw new Error('Dosya yüklenemedi.');
+              const content = await response.text();
+              element.outerHTML = content;
+          } catch (error) {
+              console.error('Hata:', error);
+          }
+      });
+  </script>
+  
+  </body>
+</html>
