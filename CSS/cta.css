@@ -1,0 +1,142 @@
+.body-1 {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.015em;
+}
+
+.cta {
+    height: 558px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.ctaContainer {
+    color: white;
+    margin-top: 16px;
+    background-color: black;
+    width: 1100px;
+    height: 473px;
+    background-image: url(../images/cta.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+}
+
+.ctaHeader {
+    margin-top: 100px;
+    width: 422px;
+    height: 132px;
+    text-align: center;
+
+}
+
+.ctaHead {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+    padding: 0 15px;
+
+}
+
+.CtaForm {
+    margin-top: 19px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+.ctaInput {
+    background-color: transparent;
+    padding: 19px 16px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    width: 370px;
+
+}
+
+input::placeholder {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.015em;
+    color: grey;
+
+}
+
+.ctabtn {
+    position: absolute;
+    background-color: white;
+    margin-right: 4px;
+    width: 111px;
+    height: 41px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 31px;
+    letter-spacing: -0.015em;
+}
+
+
+.ctaFrame21 {
+    margin-bottom: 105px;
+}
+
+
+
+.ctaList {
+    margin-top: 26px;
+    display: flex;
+    text-align: center;
+    padding: 0;
+    gap: 8px;
+
+    color: grey;
+
+
+
+}
+
+
+.ctaListitem:first-child::after{
+    content: " . ";
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.015em;
+    margin: 0 8px;
+} 
+
+  .radial-gradientCta {
+    position: absolute;
+
+    width: 650px;
+    height: 134px;
+   
+   
+    background:
+        linear-gradient( rgba(140, 69, 255, 50) 50%, #8C45FF 100%);
+    filter: blur(150px);
+}
