@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.companies-section {
+  background-color: black;
+}
+.companies {
+  padding: 0 115px 59px 115px;
+  width: 1208px;
+  margin: 0 auto;
+}
+.comp-p {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 59px;
+}
+.comp-li {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 32px 40px;
+}
+.companies-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
