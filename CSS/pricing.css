@@ -1,0 +1,94 @@
+.pricing {
+  background-color: black;
+  padding: 129px 14px;
+}
+.pricing-text {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pricing-text h2 {
+  font-size: 56px;
+  line-height: 65px;
+  letter-spacing: -0.015em;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.pricing-text p {
+  text-align: center;
+  color: white;
+  width: 395px;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: -0.001rem;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+}
+/* kartlar */
+.pricing-cards {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.pricing-cards .card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  width: 307px;
+  height: 500px;
+  margin-top: 111px;
+  display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+.card h3 {
+  font-size: 24px;
+  letter-spacing: -0.004em;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  line-height: 31px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+.card-div {
+  margin-left: 20px;
+}
+.card p {
+  line-height: 26px;
+  letter-spacing: -0.001rem;
+  font-family: "Inter Tight", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+.pricing-cards .card ul li {
+  position: relative; /* İkonun doğru konumlanması için */
+  padding-left: 25px; /* İkona yer açmak için */
+}
+
+.pricing-cards .card ul li::before {
+  content: url(../images/Vector.png); /* İkon olarak bir onay işareti ekleniyor */
+  position: absolute;
+  left: 0; /* Sol tarafa hizalar */
+  top: 0;
+  color: white; /* İkonun rengi */
+  line-height: 32px; /* Liste elemanıyla hizalanması için */
+  width: 15px; /* İkonun genişliği */
+  height: 15px; /* İkonun yüksekliği */
+}
+.card-list {
+  list-style: none;
+  padding: 10px;
+}
+.card-button{
+    width: 260px;
+    height: 38px;
+    border-radius: 10px;
+    margin: 10px; 
+    align-self: center;
+}

@@ -9,6 +9,10 @@ ul {
 .companies-section {
   background-color: black;
 }
+.companies-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .companies {
   padding: 0 115px 59px 115px;
   width: 1208px;
@@ -19,6 +23,9 @@ ul {
   text-align: center;
   padding-bottom: 40px;
   padding-top: 59px;
+  letter-spacing: -0.001em;
+  font-size: 16px;
+  line-height: 26px;
 }
 .comp-li {
   border: 1px solid black;
@@ -30,4 +37,15 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+}
+/*tablet*/
+@media screen and (min-width: 810px) and (max-width: 1199px) {
+  
+}
+  
+
+
+/*mobile*/
+@media screen and (min-width: 390px) and (max-width: 809px) {
+
 }
