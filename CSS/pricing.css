@@ -47,6 +47,7 @@
     
     justify-content: space-between;
 }
+
 .card h3 {
   font-size: 24px;
   letter-spacing: -0.004em;
@@ -91,4 +92,8 @@
     border-radius: 10px;
     margin: 10px; 
     align-self: center;
+}
+
+.card{
+  background-image: linear-gradient(180deg, #000 29%, rgba(0, 0, 0, 0) 100%),url(../images/cta.png);
 }

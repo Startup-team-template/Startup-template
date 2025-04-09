@@ -38,14 +38,33 @@ ul {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 /*tablet*/
 @media screen and (min-width: 810px) and (max-width: 1199px) {
-  
+  .companies-container{
+    max-width: 810px;
+}
+.companies{
+    padding: 0 80px 59px 80px;
+    width: 810px;
+}
+.comp-li {
+    width: calc((100% - 20px)/ 3);
+  }
 }
   
 
 
 /*mobile*/
 @media screen and (min-width: 390px) and (max-width: 809px) {
-
+  .companies-container{
+    max-width: 390px;
+}
+.companies{
+    padding: 0px;
+    width: 390px;
+}
+.comp-li {
+    width: calc((100% - 10px)/ 2);
+  }
 }
