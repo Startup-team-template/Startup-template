@@ -63,7 +63,7 @@ ul {
 }
 .companies{
     padding: 0px;
-    width: 390px;
+    max-width: 390px;
 }
 .comp-li {
     width: calc((100% - 10px)/ 2);

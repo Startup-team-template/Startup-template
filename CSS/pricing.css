@@ -44,7 +44,6 @@
   margin-top: 111px;
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
 }
 
@@ -114,12 +113,66 @@
     url(../images/cta.png);
   box-shadow: -6px -3px 80px 33px rgb(44, 19, 81);
 }
-.line{
+.line {
   border: 1px solid #282729;
-width: 250px;
-height: 0px;
-margin-bottom: 15px;
+  width: 250px;
+  height: 0px;
+  margin-bottom: 15px;
+}
+
+/*tablet*/
+@media screen and (min-width: 810px) and (max-width: 1199px) {
+  .pricing-container {
+    max-width: 810px;
+    margin: 0 auto;
+  }
+
+  .pricing {
+    padding: 129px 10px;
+  }
+
+  .pricing-cards .card {
+    width: 250px;
+  }
+
+  .line {
+    width: 210px;
+  }
+  .card-button {
+    width: 230px;
+  }
+}
 
 
 
+/*mobile*/
+@media screen and (min-width: 390px) and (max-width: 809px) {
+  .pricing-container {
+    max-width: 390px;
+    margin: 0 auto; 
+  }
+
+  .pricing-cards {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .pricing-cards .card {
+    width: 290px; 
+    margin-top: 15px;
+  }
+
+  .pricing-text h2 {
+    font-size: 26px;
+    line-height: 65px;
+    letter-spacing: -0.01em;
+  }
+
+  .pricing-text p {
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: -0.015rem;
+    margin-bottom: 50px;
+    width: 260px;
+  }
 }
