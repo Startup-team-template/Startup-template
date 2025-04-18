@@ -1,6 +1,6 @@
 .clients {
-    background: black;
-    padding: 78px 90px;
+    background: #141315;
+    color: #fff;
 }
 
 p {
@@ -8,100 +8,173 @@ p {
     padding: 0;
 }
 
-.ClientsContainer {
+.text {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  
+}
 
-    max-width: 1200px;
-    margin: 0 auto;
+.ClientsContainer {
+    padding: 78px 90px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: white;
 }
 
 .clientsTitle {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
     font-size: 56px;
-    line-height: 65px;
-    letter-spacing: -0.015em;
-    margin-top: 78px;
+    line-height: 1.16em;
+    letter-spacing: -0.01em;
+    text-align: center;
 }
 
 .clientsText {
-    margin-top: 28px;
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     font-size: 20px;
-    line-height: 31px;
-    letter-spacing: -0.004em;
-    text-align: center;
+    line-height: 1.55em;
+    letter-spacing: 0em;
     width: 433px;
-}
-
-.clientsTextitem {
-    margin: 0;
-}
-
-.Testimonial {
+    text-indent: 10px;
     margin-top: 28px;
-    display: flex;
-    z-index: 1;
-    align-items: center;
-
+    text-align: center;
 }
 
 .testimanialText {
-    position: absolute;
-    margin-left: 449px;
+    display: flex;
+    flex-direction: column;
     width: 339px;
     height: 170px;
-
 }
 
 .testTextHeader {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
-    font-size: 23px;
-    line-height: 34px;
-    letter-spacing: -0.004em;
+    font-size: 20px;
+    line-height: 1.3em;
+    letter-spacing: 0em;
     margin-bottom: 20px
 }
 
 .testTextName {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.004em;
-    margin-bottom: 5px;
+    line-height: 1.62em;
+    letter-spacing: 0em;
+  
 }
 
 .testTexttitle {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     font-size: 14px;
-    line-height: 26px;
-    letter-spacing: -0.004em;
+    line-height: 1.86em;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.7);
+  
+}
+.testimanialText{
+    margin: 108px 187px 123px 464px;
+    
+}
+.TestimonialDesktop {
+   background-image: url(../images/Testimonial.png);
+    display: flex;
+    width: 990px;
+height: 401px;
 }
 
-.radial-gradientClients {
-    width: 312px;
-    height: 234px;
+.testimonialTablet {
+    background-image: url(../images/TestimonialTablet.png);
+   display: none;
+   width: 810px;
+height: 334px;
+}
+.mobilContainer{
+    display: none;
+
+ 
+}
+.testimonialMobil {
+   background-image: url(../images/Testimonial-mobile.png);
+   width: 317px;
+   height: 290px;
+   margin-bottom: -35px;
+}
+.elipsEffect{
     position: absolute;
-    margin-left: 170px;
-    background:
-        linear-gradient( rgba(140, 69, 255, 50) 0%, #8C45FF 100%);
-    filter: blur(200px);
+    border-radius: 100%;
+    fill: rgba(140, 69, 255, 0.5);
+    filter: blur(250px);
+
+}
+.elipsEffect > svg{
+    width:820px;
+     height:742px;
+}
+.elipsEffect > ellipse {
+    fill-opacity: 0.5;}
+@media screen and (min-width: 810px) and (max-width: 1199px) {
+
+.TestimonialDesktop,
+.mobilContainer {
+ display: none;
+}
+.testimonialTablet{
+    display: flex;
+}
+.testimanialText{
+ margin: 75px 113px 88px 358px;
+}
+.elipsEffect{
+    margin-left: 100px;
+    margin-top: -50px;
+}
+.elipsEffect > svg{
+    width:700px;
+}
+.elipsEffect{
+    filter: blur(150px);
 }
 
-/* linear-gradient(360deg, rgba(140, 69, 255,) 50%, #361764 100%); */
+.testTexttitle{margin-bottom: 0;}
+}
+@media screen and (min-width: 390px) and (max-width: 809px) {
+    .TestimonialDesktop,.testimonialTablet{
+        display: none;
+    }
+   .mobilContainer{
+        display: flex;
+    }
+    .ClientsContainer {
+        padding: 50px 0px;
+    }
+
+    .clientsText {
+        width: 300px;
+    }
+    .mobilContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .testimanialText{
+    margin: auto;
+    }
+    .elipsEffect > svg{
+        width:320px;
+    }
+    
+.elipsEffect{
+    margin-top: -175px;
+    margin-left: 40px;
+}
+
+.elipsEffect{
+    filter: blur(5px);
+}
+.elipsEffect > ellipse {
+    fill-opacity: 1;
+}
+}
