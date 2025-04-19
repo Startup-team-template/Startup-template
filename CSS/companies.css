@@ -28,10 +28,13 @@ ul {
   line-height: 26px;
 }
 .comp-li {
-  border: 1px solid black;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   padding: 32px 40px;
   width: calc((100% - 30px)/ 4);
+}
+.comp-li img{
+  width: 100%;
 }
 .companies-list {
   display: flex;
@@ -62,7 +65,7 @@ ul {
     max-width: 390px;
 }
 .companies{
-    padding: 0px;
+    padding: 0px 15px;
     max-width: 390px;
 }
 .comp-li {
