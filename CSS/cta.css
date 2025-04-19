@@ -1,69 +1,70 @@
+
 .body-1 {
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.015em;
+    line-height: 1.62em;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.5);
+}
+.text {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .cta {
-    height: 558px;
     background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
+    /* background: linear-gradient(180deg, rgba(2, 1, 3, 0) 0%, #020103 100%); */
 }
 
 .ctaContainer {
-    color: white;
-    margin-top: 16px;
-    background-color: black;
+    margin-top: 22px;
+    margin-bottom: 63px;
     width: 1100px;
     height: 473px;
-    background-image: url(../images/cta.png);
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
+    background-image: url(../images/cta.png);
+
 }
 
 .ctaHeader {
-    margin-top: 100px;
-    width: 422px;
-    height: 132px;
-    text-align: center;
-
-}
-
-.ctaHead {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
     font-size: 56px;
-    line-height: 65px;
-    letter-spacing: -0.015em;
-    padding: 0 15px;
-
+    line-height: 1.16em;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-top: 94px;
+    width: 414px;
+    height: 132px;
+    margin-bottom: 25px;
 }
 
 .CtaForm {
-    margin-top: 19px;
     display: flex;
     justify-content: end;
     align-items: center;
-
+    margin-bottom: 20px;
 }
-
 
 .ctaInput {
     background-color: transparent;
     padding: 19px 16px;
     border-radius: 8px;
-    border: 1px solid grey;
-    width: 370px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 401px;
+    height: 49px;
 
 }
 
@@ -73,70 +74,129 @@ input::placeholder {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.015em;
-    color: grey;
-
+    line-height: 1.62em;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .ctabtn {
     position: absolute;
-    background-color: white;
-    margin-right: 4px;
-    width: 111px;
+    background-color: #fff;
+    margin: 4px;
+    width: 117px;
     height: 41px;
     padding: 5px 15px;
     border-radius: 8px;
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
     font-size: 15px;
-    line-height: 31px;
-    letter-spacing: -0.015em;
+    line-height: 2.07em;
+    letter-spacing: -0.01em;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
 }
 
-
-.ctaFrame21 {
-    margin-bottom: 105px;
+.mobilButton {
+    display: none;
+    width: 272px;
+height: 41px;
+background-color: #fff;
+padding: 5px 15px;
+border-radius: 8px;
+font-weight: 500;
+font-size: 15px;
+line-height: 2.07em;
+letter-spacing: -0.01em;
+text-align: center;
+border: 1px solid rgba(255, 255, 255, 0.15);
+margin-top: 12px;
 }
-
 
 
 .ctaList {
-    margin-top: 26px;
     display: flex;
     text-align: center;
     padding: 0;
     gap: 8px;
-
     color: grey;
-
-
-
 }
-
 
 .ctaListitem:first-child::after{
     content: " . ";
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.015em;
-    margin: 0 8px;
-} 
-
-  .radial-gradientCta {
+}
+  .elips {
     position: absolute;
+}
+.elipsSvg{
+    width:1100px;
+     height:473;
+}
 
-    width: 650px;
-    height: 134px;
+.mobileElips{
+    display: none;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1199px) {
+    .ctaHeader {
+        width: 414px;
+    }
+    .elips{
+        height: 470px;
+    }
+
+    .elipsSvg{
+        width: 800px;
+        
+    }
    
-   
-    background:
-        linear-gradient( rgba(140, 69, 255, 50) 50%, #8C45FF 100%);
-    filter: blur(150px);
+}
+
+@media screen and (min-width: 390px) and (max-width: 809px) {
+    .ctabtn {
+        display: none;
+    }
+
+    .mobilButton {
+        display: inline-block;
+        
+    }
+
+    .ctaContainer {
+        width: 390px;
+
+        height: 473px;
+        margin-top: 15px;
+        margin-bottom: 69px;
+    }
+
+    .ctaHeader {
+        width: 388px;
+        font-size: 36px;
+        line-height: 1.19em;
+        margin-bottom: 19px;
+    }
+
+    .CtaForm {
+        width: 272px;
+        height: 102px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ctaInput {
+        background-color:transparent;
+        padding: 19px 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        width: 272px;
+        height: 49px;
+        display: flex;
+        flex-direction: row;
+
+    }
+  .elips{
+    display: none;
+  }
+
 }
