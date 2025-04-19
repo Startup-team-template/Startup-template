@@ -152,4 +152,7 @@
   .hero{
     min-height: 0px;
   }
+  .badge-container{
+    width: 100%;
+  }
 }
